@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #23232e;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+.sobre {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 3s forwards;
+}
+
+.sobre h2 {
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    line-height: 1.6;
+}
+ h2 , P , h1 {
+    color: black;
+ }
+
+#sobre {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideen 3s forwards;
+}
+/* Animação */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animação */
+@keyframes slideen {
+    from {
+        transform: translatey(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .sobre {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .sobre h2 {
+        font-size: 1.2em;
+    }
+
+    .sobre p {
+        font-size: 0.9em;
+    }
+}

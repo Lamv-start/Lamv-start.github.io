@@ -1,0 +1,35 @@
+.resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resultados div {
+    flex: 1;
+    padding: 20px;
+    max-width: 30%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultados div img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .resultados div {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .resultados div {
+        max-width: 100%;
+    }
+}
